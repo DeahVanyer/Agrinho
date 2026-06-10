@@ -1,45 +1,36 @@
 body {
-  font-family: 'Inter', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.7;
-  position: relative;
-  overflow-x: hidden;
-}
-
-/* FUNDO DE JORNAL */
-body {
 font-family: 'Inter', sans-serif;
-background: transparent;
+background: transparent; /* IMPORTANTE */
 color: var(--text);
 line-height: 1.7;
 position: relative;
-overflow-x: hidden;
+min-height: 100vh;
 }
+
+/* CAMADA 1 — PAPEL ANTIGO */
 body::before {
 content: "";
 position: fixed;
 inset: 0;
 
-background:
-linear-gradient(rgba(255, 248, 220, 0.85), rgba(255, 248, 220, 0.85)),
-url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f");
-
+background-image: url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f");
 background-size: cover;
 background-position: center;
 
-filter: grayscale(40%) contrast(90%) brightness(95%);
+filter: sepia(40%) brightness(95%) contrast(90%);
 opacity: 0.25;
 
-z-index: -2;
+z-index: -10;
 }
+
+/* CAMADA 2 — TEXTURA DE PAPEL */
 body::after {
 content: "";
 position: fixed;
 inset: 0;
 
 background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
-opacity: 0.15;
+opacity: 0.2;
 
-z-index: -1;
+z-index: -9;
 }
