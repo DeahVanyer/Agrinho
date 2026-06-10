@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fake News e seus problemas</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #2328305b;
+      --card: #eef7fc7a;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #17181a;
+      --border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      margin-bottom: 50px;
+      padding: 30px;
+      border-radius: 12px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: var(--muted);
+    }
+
+    .section {
+      margin-bottom: 40px;
+      padding: 25px;
+      border-radius: 12px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+
+    .section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .reverse {
+      direction: rtl;
+    }
+
+    .reverse > * {
+      direction: ltr;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    h2 {
+      margin-bottom: 8px;
+      font-size: 1.6rem;
+    }
+
+    h3 {
+      color: var(--accent);
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    p {
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      margin-top: 15px;
+      padding: 10px 14px;
+      background: #1e263034;
+      border-left: 4px solid var(--accent);
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+
+    .links {
+      margin-top: 15px;
+    }
+
+    .links a {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .split {
+        grid-template-columns: 1fr;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="page">
+
+<header>
+  <h1>Notícias falsas em mídias digitais</h1>
+  <p>Um problema grave na internet tem um nome e chama-se Fake News.</p>
+</header>
+
+<!-- SEÇÃO 1 -->
+<section class="section split">
+  <div>
+    <h2>Notícias Falsas</h2>
+    <h3>Ultimamente, se fala muito sobre.</h3>
+
+    <p>É indiscutível que as notícias falsas têm ganhado poder nos últimos anos. Nos piores casos, as famosas fake news têm se manifestado de forma assustadora, utilizando vídeos gerados por inteligência artificial, criando anúncios e publicações totalmente fora da cogitação, entre outras formas de gerar conteúdos falsos para enganar pessoas e gerar polêmicas.</p>
+
+    <p>Os problemas enfrentados em compreender e interpretar as notícias falsas vão além da compreensão, pois as pessoas olham os assuntos e apenas aceitam, sem estudar sobre. É uma forma simples de simplesmente acreditarem, mas é prejudicial.</p>
+
+    <p><strong>Um Exemplo:</strong> Divulgar a morte de alguma pessoa famosa, sem a notícia ser real.</p>
+
+    <div class="highlight">Tendo isso em mente, é importante sempre verificar os fatos.</div>
+  </div>
+
+  <img src="https://tse2.mm.bing.net/th/id/OIP.DYSoX8nzY-u5VQ2s5681SAHaE8">
+</section>
+
+<!-- SEÇÃO 2 -->
+<section class="section split reverse">
+  <div>
+    <h2>Por que as notícias falsas são feitas?</h2>
+    <h3>Engajamento junto de dinheiro.</h3>
+
+    <p>Vale ressaltar os problemas enfrentados pela desinformação no mundo digital. No jogo "Metal Gear Solid 2", da empresa Konami, era destacado como as fake news tomariam poder sobre como conhecemos a mídia virtual, com pessoas sendo manipuladas pela inteligência artificial para gerar conteúdos e enganar outras, onde tudo isso é feito para gerar engajamento e dinheiro.</p>
+
+    <p><strong>Daria como exemplo:</strong> A criação de notícias falsas para gerar visualizações e "Likes", tudo isso junto de compartilhamento, gera dinheiro para o criador.</p>
+
+    <div class="highlight">É fundamental entender os motivos por trás da criação de notícias falsas.</div>
+  </div>
+
+  <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+</section>
+
+<!-- SEÇÃO 3 -->
+<section class="section split">
+  <div>
+    <h2>Quem é atingido?</h2>
+    <h3>Além de pessoas sem muito acesso à internet.</h3>
+
+    <p>Francamente, as notícias falsas vêm tomando poder e enganando não apenas as pessoas mais idosas, mas até mesmo jovens, que utilizam as redes sociais com muita frequência no dia a dia, sendo os mais propensos a caírem nesse golpe e fraude.</p>
+
+    <p>Isso prova como devemos manter a interpretação bem formada e compreender os assuntos, analisando e estudando antes de acreditar.</p>
+
+    <p>Tudo isso mostra, como hoje em dia é fácil cair em notícias falsas espalhadas na internet.</p>
+
+    <div class="highlight">Fique em alerta sempre, para não prejudicar quem você ama.</div>
+  </div>
+
+  <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+</section>
+
+<!-- SEÇÃO 4 -->
+<section class="section split reverse">
+  <div>
+    <h2>O combate à essa maldade virtual</h2>
+    <h3>Não é simples, mas estudar é essencial</h3>
+
+    <p>Diante de toda essa informação, o que poderia ser feito para analisarmos e concretizarmos os pontos essenciais para não cair em tais golpes? A educação é fundamental para esse assunto, em entender os conceitos virtuais.</p>
+
+    <p>Priorizar os estudos sobre as notícias falsas está se tornando cada vez mais importante para exilar essa maldade que está crescendo em nosso mundo.</p>
+
+    <p>Priorizar a educação e o pensamento crítico é essencial para não espalhar e ajudar quem precisa.</p>
+
+    <div class="highlight">Além de estudar e conferir o assunto divulgado.</div>
+  </div>
+
+  <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b">
+</section>
+
+<!-- SEÇÃO 5 -->
+<section class="section split">
+  <div>
+    <h2>Se atualize sempre</h2>
+    <h3>Páginas oficiais estão em alta, sempre siga elas</h3>
+
+    <p>Confiar em redes oficiais de assuntos, como os sites governamentais e institucionais, é uma forma simples e eficaz de evitar notícias falsas.</p>
+
+    <p>Claramente isso não basta, a confiança não é apenas o ponto forte, mas sim os estudos e verificação.</p>
+
+    <div class="highlight">Verifique sempre.</div>
+
+    <div class="links">
+      <h3>Fontes confiáveis para verificação:</h3>
+      <a href="https://g1.globo.com" target="_blank">G1 (Globo)</a>
+      <a href="https://www.bbc.com/portuguese" target="_blank">BBC Brasil</a>
+      <a href="https://www.gov.br" target="_blank">Gov.br (sites oficiais)</a>
+      <a href="https://lupa.uol.com.br" target="_blank">Agência Lupa</a>
+      <a href="https://aosfatos.org" target="_blank">Aos Fatos</a>
+    </div>
+
+  </div>
+
+  <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+</section>
+
+  </div>
+
+  <script>
+    const sections = document.querySelectorAll('.section');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>
